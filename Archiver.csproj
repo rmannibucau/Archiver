@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PublishAot>true</PublishAot>
+
+    <CommandLineVersion>2.0.0-beta4.22272.1</CommandLineVersion>
+    <LuceneVersion>4.8.0-beta00016</LuceneVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lucene.Net" Version="$(LuceneVersion)" />
+    <PackageReference Include="Lucene.Net.Analysis.Common" Version="$(LuceneVersion)" />
+    <PackageReference Include="Lucene.Net.QueryParser" Version="$(LuceneVersion)" />
+    <PackageReference Include="System.CommandLine" Version="$(CommandLineVersion)" />
+  </ItemGroup>
+
+</Project>
